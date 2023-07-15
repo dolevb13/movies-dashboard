@@ -1,0 +1,6 @@
+export const SIZES = {
+    CARD_WIDTH: 300,
+    CARD_HEIGHT: 500,
+    CARD_MARGIN: 50,
+    HEADER_HEIGHT: 70
+}

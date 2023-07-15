@@ -1,0 +1,17 @@
+.headline {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    height: 70px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+
+    .search-and-filter {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 50px;
+    }
+}

@@ -1,0 +1,41 @@
+.movie-page-container {
+    --padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 2 * var(--padding));
+    padding: var(--padding);
+    background-color: var(--main-color);
+    
+    > div, p {
+        margin: 10px 20px;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .movie-page-back-button {
+        display: flex;
+        width: 200px;
+        align-self: center;
+        margin-top: 60px;
+        background-color: rgb(228, 254, 253);
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+            background-color: rgb(120, 120, 120);
+            
+            a {
+                text-align: center;
+                color: rgb(228, 254, 253);
+            }
+        }
+
+        a {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.filter-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 70px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    animation: fade-in-animation 0.5s ease-in forwards;
+    z-index: 1;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .filter-selection, .genre-selection, .year-selection, .rating-selection {
+        z-index: 1;
+        background-color: var(--main-color);
+        margin: 30px;
+        width: 200px;
+    }
+}
+
+.filter-icon {
+    position: absolute;
+    left: 20px;
+    top: 23px;
+    z-index: 2;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@keyframes fade-in-animation {
+  0% {
+    transform: translateY(-70px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
