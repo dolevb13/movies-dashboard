@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { useParams, Link } from 'react-router-dom';
-import './moviePage.scss';
+import './MoviePage.scss';
 
 const MoviePage = () => {
     const movies = useSelector(state => state.movies.all);
